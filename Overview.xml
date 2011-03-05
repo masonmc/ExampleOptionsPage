@@ -1,0 +1,179 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet href="../../../../Common/Overview.xsl" type="text/xsl"?>
+<VSSDKSample>
+  <ImagePath>../../../../Common</ImagePath>
+  <Status>
+    <Accessibility>true</Accessibility>
+    <ArchitectureDiagram>true</ArchitectureDiagram>
+    <Comments>true</Comments>
+    <Documentation>true</Documentation>
+    <ErrorHandling>true</ErrorHandling>
+    <FollowSDKCodingStandards>true</FollowSDKCodingStandards>
+    <Localizable>true</Localizable>
+    <Overview>true</Overview>
+    <ScenarioTests>true</ScenarioTests>
+    <Supported>true</Supported>
+    <UnitTests>true</UnitTests>
+    <Style>Example</Style>
+  </Status>
+  <Overview>
+    <ShortName>C# Example.OptionsPage</ShortName>
+    <LongName>C# Options Page sample</LongName>
+    <Phrase>Implementing custom options page for Visual Studio IDE.</Phrase>
+  </Overview>
+  <Introduction>
+    <Summary>
+      This sample demonstrates how to add custom options pages into the standard Visual Studio Options dialog.
+      The sample adds two options pages and demonstrates how to customize the presentation and properties' persistence.
+    </Summary>
+    <Goal>Integrate custom options pages into Visual Studios Options dialog.</Goal>
+    <Goal>Supports properties persistence.</Goal>
+    <Goal>Supports custom user control as a UI for the property page.</Goal>
+    <Image width="400" height="400">Example.OptionsPage.jpg</Image>
+  </Introduction>
+  <SampleInfo>
+    <State>
+    </State>
+    <Type>Example</Type>
+    <Complexity>2</Complexity>
+    <Screenshot>Example.OptionsPage.jpg</Screenshot>
+    <Area>IDE</Area>
+    <Language>C#</Language>
+    <Folder>VisualStudioIntegration\Samples\IDE\CSharp\Example.OptionsPage\</Folder>
+    <SampleSolution>OptionsPage.sln</SampleSolution>
+    <FolderUnitTest>VisualStudioIntegration\Samples\IDE\CSharp\Example.OptionsPage\TDD\</FolderUnitTest>
+    <UnitTestStartup>OptionsPage.UnitTests.csproj</UnitTestStartup>
+    <Doc />
+    <Keywords>
+      <Keyword>Options</Keyword>
+      <Keyword>Page</Keyword>
+    </Keywords>
+  </SampleInfo>
+  <GettingStarted>
+    <Paragraph>
+      The sample solution includes only one project (OptionsPage), which contains classes that
+      provide a Visual Studio Package and custom Options Pages that will be integrated into the Visual Studio IDE.
+      The OptionsPagePackage class uses ProvideOptionsPages attribute to provide custom options pages.
+    </Paragraph>
+    <Paragraph>
+      To implement an options page, the class should be a Microsoft.VisualStudio.Shell.DialogPage.
+      Within the sample we have two pages: OptionsPageGeneral and OptionsPageCustom.
+      Both pages allow the user to provide custom properties. OptionsPageGeneral uses a standard Property editor control for presentation.
+      OptionsPageCustom uses a custom control (OptionsCompositeControl) for the UI.
+    </Paragraph>
+    <Paragraph>
+      The ProvideProfile attribute is used to provide persistence for the package. 
+      The DesignerSerializationVisibility attribute is used to allow persistence for each property 
+      of the options page.
+    </Paragraph>
+    <Paragraph>
+      To start the sample:
+    </Paragraph>
+    <Paragraph>
+        1.	Build the solution
+    </Paragraph>
+    <Paragraph>
+        2.	Open Visual Studio under experimental hive
+    </Paragraph>
+    <Paragraph>
+        3.	Check new category and new options pages within Visual Studio Options dialog. 
+        (Menu [Tools].[Options].[My Managed Options (C#)]).
+    </Paragraph>
+  </GettingStarted>
+  <AdditionalResources>
+    <Resource>
+      <Title>Visual Studio SDK Website</Title>
+      <URL>http://www.msdn.microsoft.com/vsx</URL>
+    </Resource>
+  </AdditionalResources>
+  <UnitTests>
+    <Test>
+      Test package load, unload, package settings.
+    </Test>
+    <Test>
+      Test custom control properties.
+    </Test>
+    <Test>
+      Test custom options page properties.
+    </Test>
+  </UnitTests>
+  <FunctionalTests>
+  </FunctionalTests>
+  <ProjectFiles>
+    <File>
+      <Name>AssemblyInfo.cs</Name>
+      <Description>
+        This file contains general information about the assembly provided through attributes.
+      </Description>
+    </File>
+    <File>
+      <Name>ClassDiagram.cd</Name>
+      <Description>
+	This file contains class diagram for the project.
+      </Description>
+    </File>
+    <File>
+      <Name>GuidStrings.cs</Name>
+      <Description>
+        Helper class containing necessary guid constants for the project.
+      </Description>
+    </File>
+    <File>
+      <Name>OptionsCompositeControl.cs</Name>
+      <Description>
+        Implements UI for custom Options page.
+      </Description>
+    </File>
+    <File>
+      <Name>OptionsPageCustom.cs</Name>
+      <Description>
+        Implements an Options page that provides custom properties and presentation.
+      </Description>
+    </File>
+    <File>
+      <Name>OptionsPageGeneral.cs</Name>
+      <Description>
+        Implements an Options page that provides custom properties and uses standard Property editor control for presentation.
+      </Description>
+    </File>
+    <File>
+      <Name>OptionsPagePackage.cs</Name>
+      <Description>
+        This contains the package class implementing IVsPackage and IVsUserSettings interfaces.
+      </Description>
+    </File>
+    <File>
+      <Name>
+        Resources.resx
+        VsPackage.resx
+      </Name>
+      <Description>
+        These are our project's resource files. Some of the resources defined here are used for the 
+        registration process of the package.
+      </Description>
+    </File>
+    <File>
+      <Name>WinFormwHelper.cs</Name>
+      <Description>
+        Provides Windows.Forms GUI helper functions.
+        It provides a boolean property to suppress message boxes.
+      </Description>
+    </File>
+    <File>
+      <Name>
+      </Name>
+      <Description>
+      </Description>
+    </File>
+  </ProjectFiles>
+  <History>
+    <Change>
+      <Date>2006-06-15</Date>
+      <Description>Created this sample for the Visual Studio 2005 SDK.</Description>
+    </Change>
+    <Change>
+      <Date>2009-10-13</Date>
+      <Description>Updated sample for the Visual Studio 2010 SDK.</Description>
+    </Change>
+  </History>
+</VSSDKSample>

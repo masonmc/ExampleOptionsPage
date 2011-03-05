@@ -1,0 +1,15 @@
+C:\MYCODE\ExampleOptionsPage\bin\Debug\OptionsPage.dll
+C:\MYCODE\ExampleOptionsPage\bin\Debug\OptionsPage.pdb
+C:\MYCODE\ExampleOptionsPage\bin\Debug\OptionsPage.pkgdef
+C:\MYCODE\ExampleOptionsPage\bin\Debug\OptionsPage.vsix
+C:\MYCODE\ExampleOptionsPage\bin\Debug\extension.vsixmanifest
+C:\MYCODE\ExampleOptionsPage\obj\Debug\ResolveAssemblyReference.cache
+C:\MYCODE\ExampleOptionsPage\obj\Debug\Microsoft.Samples.VisualStudio.IDE.OptionsPage.Resources.resources
+C:\MYCODE\ExampleOptionsPage\obj\Debug\Microsoft.Samples.VisualStudio.IDE.OptionsPage.VsPackage.resources
+C:\MYCODE\ExampleOptionsPage\obj\Debug\GenerateResource.read.1.tlog
+C:\MYCODE\ExampleOptionsPage\obj\Debug\GenerateResource.write.1.tlog
+C:\MYCODE\ExampleOptionsPage\obj\Debug\OptionsPage.dll
+C:\MYCODE\ExampleOptionsPage\obj\Debug\OptionsPage.pdb
+C:\MYCODE\ExampleOptionsPage\obj\Debug\OptionsPage.pkgdef
+C:\MYCODE\ExampleOptionsPage\obj\Debug\extension.vsixmanifest
+C:\MYCODE\ExampleOptionsPage\obj\Debug\Microsoft.Samples.VisualStudio.IDE.OptionsPage.OptionsCompositeControl.resources

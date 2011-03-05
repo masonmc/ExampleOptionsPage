@@ -1,0 +1,9 @@
+C:\MYCODE\ExampleOptionsPage\UnitTests\bin\Debug\OptionsPage.UnitTests.dll
+C:\MYCODE\ExampleOptionsPage\UnitTests\bin\Debug\OptionsPage.UnitTests.pdb
+C:\MYCODE\ExampleOptionsPage\UnitTests\bin\Debug\Microsoft.VSSDK.UnitTestLibrary.dll
+C:\MYCODE\ExampleOptionsPage\UnitTests\bin\Debug\OptionsPage.dll
+C:\MYCODE\ExampleOptionsPage\UnitTests\bin\Debug\OptionsPage.pdb
+C:\MYCODE\ExampleOptionsPage\UnitTests\bin\Debug\Microsoft.VSSDK.UnitTestLibrary.xml
+C:\MYCODE\ExampleOptionsPage\UnitTests\obj\Debug\ResolveAssemblyReference.cache
+C:\MYCODE\ExampleOptionsPage\UnitTests\obj\Debug\OptionsPage.UnitTests.dll
+C:\MYCODE\ExampleOptionsPage\UnitTests\obj\Debug\OptionsPage.UnitTests.pdb
